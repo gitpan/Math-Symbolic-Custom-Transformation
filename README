@@ -1,7 +1,5 @@
-Math::Symbolic::Custom::Transformation version 1.00
+Math::Symbolic::Custom::Transformation version 1.01
 ===================================================
-
-DESCRIPTION
 
 INSTALLATION
 
@@ -45,7 +43,7 @@ symbolic-module at steffen-mueller dot net
 
 COPYRIGHT AND LICENCE
 
-Copyright (c) 2005 Steffen Mueller
+Copyright (c) 2006 Steffen Mueller
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

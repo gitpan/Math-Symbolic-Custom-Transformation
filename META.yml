@@ -1,6 +1,6 @@
 ---
 name: Math-Symbolic-Custom-Transformation
-version: 1.00
+version: 1.01
 author:
   - Steffen Mueller <symbolic-module at steffen-mueller dot net>
 abstract: Transform Math::Symbolic trees
@@ -16,5 +16,5 @@ build_requires:
 provides:
   Math::Symbolic::Custom::Transformation:
     file: lib/Math/Symbolic/Custom/Transformation.pm
-    version: 1.00
+    version: 1.01
 generated_by: Module::Build version 0.2611

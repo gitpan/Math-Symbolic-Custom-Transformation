@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 733;
+use Test::More tests => 731;
 #use Test::More 'no_plan';
 use_ok('Math::Symbolic');
 use_ok('Math::Symbolic::Custom::Pattern');
