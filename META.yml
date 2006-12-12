@@ -1,20 +1,25 @@
 ---
 name: Math-Symbolic-Custom-Transformation
-version: 1.01
+version: 1.10
 author:
-  - Steffen Mueller <symbolic-module at steffen-mueller dot net>
+  - 'Steffen Mueller <symbolic-module at steffen-mueller dot net>'
 abstract: Transform Math::Symbolic trees
 license: perl
+resources:
+  license: http://dev.perl.org/licenses/
 requires:
   Math::Symbolic: 0.163
-  Math::Symbolic::Custom::Pattern: 1.10
+  Math::Symbolic::Custom::Pattern: 1.20
+build_requires:
+  Test::More: 0
 recommends:
   Test::Pod: 1.0
   Test::Pod::Coverage: 1.0
-build_requires:
-  Test::More: 0
 provides:
   Math::Symbolic::Custom::Transformation:
     file: lib/Math/Symbolic/Custom/Transformation.pm
-    version: 1.01
-generated_by: Module::Build version 0.2611
+    version: 1.10
+generated_by: Module::Build version 0.280501
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.50.
+signed via the Module::Signature module, version 0.55.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,20 +14,20 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 2fbc5e304f9a2c986149b0b3344aa6cfb44cfa31 Build.PL
-SHA1 4ef2e3a77b344e27ebaf54e0f773b6899ef5c2d3 Changes
+SHA1 642c34f08ff97d0f56a689cb14158fc220919b54 Build.PL
+SHA1 62629b8927e1e0ebabde720d17ba9561ee0dcba5 Changes
 SHA1 c44c8e2daa69433b7e7a39c769b43fbf4992b9d5 MANIFEST
-SHA1 6367b1541446c00bc553599f7e935af65ade06a1 META.yml
-SHA1 abe61fcc2a108c517780b3ebda2c1df637aa6d77 Makefile.PL
-SHA1 52047ca03d81a3404a616eea4ff61499778eba4d README
-SHA1 18dc5cdae5c4f801276f9b12ccd6ea768ea29748 lib/Math/Symbolic/Custom/Transformation.pm
+SHA1 a142ed57f22589badebe849e972a1919f7c7a726 META.yml
+SHA1 a0fed90dafe2b2bed202e1d48e98057c02c4b94f Makefile.PL
+SHA1 c893bef3faa8cec217d0df096763b84c805853b8 README
+SHA1 1fed341c93a5c5202fe0801e991e0cd3003fb99d lib/Math/Symbolic/Custom/Transformation.pm
 SHA1 bb0da54f2b3f2d7955baa41ee458cb3d1887f475 t/00pod.t
 SHA1 2db32c1aac44c2e41530ea63431166d91bd458bf t/00podcover.t
-SHA1 be4d06823525d65f77125728d011d56445feb68d t/01basic.t
+SHA1 465712593a88d3927815eb2f69c32e7d2f4878ea t/01basic.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.0 (GNU/Linux)
+Version: GnuPG v1.4.3 (GNU/Linux)
 
-iD8DBQFDyoirZCuimE51gxcRAjGzAKCg8116Ag1qCchslkg1HLcl/Lg9ywCdHkkq
-FNwoXBxeWRxpPxDIblrQNZQ=
-=FN7U
+iD8DBQFFfsv9ZCuimE51gxcRAqFOAJ9iSFjd0js3kSRs9kc6UbU2n1KfVQCeI5pg
+3W+Bi9PwIdmnr7RxWBrZPuA=
+=KBkY
 -----END PGP SIGNATURE-----
