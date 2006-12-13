@@ -7,12 +7,13 @@ use warnings;
 use Carp qw/croak carp/;
 use Math::Symbolic qw/:all/;
 use Math::Symbolic::Custom::Pattern;
+require Math::Symbolic::Custom::Transformation::Group;
 
 require Exporter;
 
 our @ISA = qw(Exporter);
 
-our $VERSION = '1.21';
+our $VERSION = '1.22';
 
 =head1 NAME
 
@@ -183,7 +184,7 @@ simplification routines on C<EXPR> when the transformation is being applied
 =cut
 
 our %EXPORT_TAGS = ( 'all' => [ qw(
-	new_trafo
+	new_trafo new_trafo_group
 ) ] );
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
@@ -309,7 +310,7 @@ sub apply {
 	my $self = shift;
 	my $tree = shift;
 
-	if (not ref($tree) =~ /^Math::Symbolic/) {
+    if (not ref($tree) =~ /^Math::Symbolic/) {
 		croak("First argument to apply() must be a Math::Symbolic tree.");
 	}
 
@@ -318,7 +319,7 @@ sub apply {
 
 	my $matched = $pattern->match($tree);
 
-	return undef if not $matched;
+    return undef if not $matched;
 
 	my $match_vars = $matched->{vars};
 	my $match_trees = $matched->{trees};
@@ -327,7 +328,7 @@ sub apply {
 	my $new = $repl->new();
 
 	no warnings 'recursion';
-		
+	
 	my $subroutine;
 	my @descend_options;
 
@@ -336,13 +337,14 @@ sub apply {
 		if ($tree->term_type() == T_VARIABLE) {
 			my $name = $tree->{name};
 			if ($name eq 'TRANSFORMATION_HOOK') {
-				my $hook = $tree->value();
+
+                my $hook = $tree->value();
 				if (not ref($hook) eq 'ARRAY' and @$hook == 2) {
 					croak("Found invalid transformation hook in replacement tree. Did you use a variable named 'TRANSFORMATION_HOOK'? If so, please change its name since that name is used internally.");
 				}
 				else {
 					my $type = $hook->[0];
-					my $operand = $hook->[1];
+					my $operand = $hook->[1]->new();
 					$operand->descend(
 						@descend_options
 					);
@@ -414,7 +416,6 @@ sub apply {
 		before => $subroutine,
 	);
 	$new->descend(@descend_options);
-	
 	return $new;
 }
 
@@ -441,7 +442,6 @@ sub apply_recursive {
     my $tree = shift;
 
     my $matched = 0;
-
     $tree->descend(
         after => sub {
             my $node = shift;
@@ -531,6 +531,8 @@ package name. (So if you want to subclass this module, you should be aware
 of that!)
 
 =cut
+
+*new_trafo_group = *Math::Symbolic::Custom::Transformation::Group::new_trafo_group;
 
 sub new_trafo {
 	unshift @_, __PACKAGE__;
