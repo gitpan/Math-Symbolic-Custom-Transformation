@@ -15,19 +15,19 @@ not run its Makefile.PL or Build.PL.
 Hash: SHA1
 
 SHA1 642c34f08ff97d0f56a689cb14158fc220919b54 Build.PL
-SHA1 6fcd2fb8b185a0757e11a6ae2ffd5dac0393d799 Changes
+SHA1 6047457abda39fc5d2746ecf46c8383d70f8a436 Changes
 SHA1 c44c8e2daa69433b7e7a39c769b43fbf4992b9d5 MANIFEST
-SHA1 854d35f25b3989de8240abe8f9c931860b671d24 META.yml
+SHA1 7382f7ee62d30f92beefd4dde4d4a57ef5d71b1c META.yml
 SHA1 a0fed90dafe2b2bed202e1d48e98057c02c4b94f Makefile.PL
 SHA1 c893bef3faa8cec217d0df096763b84c805853b8 README
-SHA1 75036aaa0b1a875794878f074283f7d65bf2e9d0 lib/Math/Symbolic/Custom/Transformation.pm
+SHA1 dd20d794ecd44b3fbf0449cc1b895c6f38fdf581 lib/Math/Symbolic/Custom/Transformation.pm
 SHA1 bb0da54f2b3f2d7955baa41ee458cb3d1887f475 t/00pod.t
 SHA1 2db32c1aac44c2e41530ea63431166d91bd458bf t/00podcover.t
 SHA1 021b6f86ac2dba71ebe33ff0d2f84c2638fa9d40 t/01basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.3 (GNU/Linux)
 
-iD8DBQFFf8WnZCuimE51gxcRAl2TAJ9ag3OraW4wC5QGqsIkNufTk7fBHACfVBkL
-hEoLiSRiCjkmUxqxkjF3r1k=
-=XMDM
+iD8DBQFFf9izZCuimE51gxcRAp6HAKC4JOj+9Cl3WGwmCbs8c6XU9lK+AwCgmAue
+5BIOufpxOuDk5yz/tiiw0AM=
+=2R5X
 -----END PGP SIGNATURE-----
