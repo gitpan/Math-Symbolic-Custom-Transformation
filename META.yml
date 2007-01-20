@@ -1,6 +1,6 @@
 ---
 name: Math-Symbolic-Custom-Transformation
-version: 1.24
+version: 2.00
 author:
   - 'Steffen Mueller <symbolic-module at steffen-mueller dot net>'
 abstract: Transform Math::Symbolic trees
@@ -8,7 +8,7 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
-  Math::Symbolic: 0.163
+  Math::Symbolic: 0.507
   Math::Symbolic::Custom::Pattern: 1.20
 build_requires:
   Test::More: 0
@@ -18,11 +18,11 @@ recommends:
 provides:
   Math::Symbolic::Custom::Transformation:
     file: lib/Math/Symbolic/Custom/Transformation.pm
-    version: 1.24
+    version: 2.00
   Math::Symbolic::Custom::Transformation::Group:
     file: lib/Math/Symbolic/Custom/Transformation/Group.pm
     version: 1.24
-generated_by: Module::Build version 0.280501
+generated_by: Module::Build version 0.2806
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
