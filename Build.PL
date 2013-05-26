@@ -9,17 +9,10 @@ my $b = Module::Build->new
                 'Math::Symbolic' => '0.507',
                 'Math::Symbolic::Custom::Pattern' => '1.20',
                },
-   recommends => {
-                  'Test::Pod' => '1.0',
-                  'Test::Pod::Coverage' => '1.0',
-                 },
    build_requires => {
                       'Test::More' => 0,
                      },
    create_makefile_pl => 'traditional',
-   sign => 1,
-#   conflicts => {},
-#   script_files => [],
   );
 
 $b->create_build_script;
